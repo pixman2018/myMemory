@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memo</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="background "></div>
+    <div id="overlay" class="hidden"></div>
+    <section id="memo-games" class="site-memo">
+      <div class="container">
+
+        <header>
+          <nav class="game-nav">
+            <ul>
+              <li class="first">
+                <a href="#" id="go" title="Start"><i class="fas fa-play"></i> Play</a>
+                <ul class="setting-menu hidden">
+                  <li>
+                    <label for="username">Name:</label>
+                    <input name="username" id="username" type="text" pattern="[a-zA-Z0-9]" placeholder="Bitte nur Buchstaben und Zahlen eintragen" autofocus />
+                  </li>
+                  <li>
+                    <span for="count">2</span>
+                    <input type="range" name="count" id="count" value="8" min="2" max="16" >
+                    <span for="count">16</span>
+                    <br>
+                    <div class="output-range"></div>
+                  </li>
+                  <li>
+                    <input type="button" value="Spielem" id="settingGame">
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </nav>
+          <h1>Memo <span class="gamer"></span><span class="count"></span></h1>
+
+        </header>
+
+        <div class="game-area"></div>
+      </div>
+    </section>
+
+    <script src="script/vendor/jquery-3.2.1.min.js"></script>
+    <script src="script/memo.js"></script>
+  </body>
+</html>

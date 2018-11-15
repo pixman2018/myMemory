@@ -1,0 +1,133 @@
+
+.site-memo
+{
+  /**
+    * header and
+    * navigationof the games
+  */
+  header
+  {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid $borderColor;
+    background-color: #fff;
+  }
+  .game-nav
+  {
+    ul
+    {
+
+      li:not(:last-child)
+      {
+        padding : {
+          right: 1em;
+        }
+      }
+      li
+      {
+        padding: {
+          top: 1em;
+          bottom: 1em;
+        }
+      }
+      .first
+      {
+        position: relative;
+      }
+    }
+    .setting-menu
+    {
+      position: absolute;
+      width: 360px;
+      background-color: #fff;
+      padding: 1em;
+      border: 1px solid black;
+      top: 15px;
+    }
+    #submit
+    {
+      display: block;
+    }
+    input#username
+    {
+      width: 100%;
+      border: 1px solid orange;
+      padding: 0.2em;
+      border-radius: 2px;
+    }
+
+  }
+
+  h1
+  {
+    margin: {
+      left: 100px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    font: {
+      family: 'Open Sans', sans-serif;
+    }
+  }
+  h1+p
+  {
+    margin-left: 1em;
+  }
+
+  /**
+  *  Game Area Design
+ */
+ .game-area
+ {
+   display: flex;
+   flex-wrap: wrap;
+   // max-width: calc(6*156px);
+   perspective: 1000px;
+ }
+
+ .cards
+ {
+   transition: all 0.7s ease-in-out;
+ }
+
+ .item
+ {
+   width: 150px;
+   height: 150px;
+   border: 1px solid black;
+ }
+
+ .memo-item
+ {
+   padding: 10px;
+   margin: 0;
+ }
+
+ .rotate380
+ {
+   transform: rotateX(360deg);
+   visibility: visible !important;
+ }
+
+}
+
+/**
+ * overlay
+*/
+.overlay {
+  width: 355px;
+  line-height: 50px;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  margin-top: calc(-42px/2);
+  left: 50%;
+  margin-left: calc(-355px/2);
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0,0,0,0.8);
+
+
+ }
